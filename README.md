@@ -1,311 +1,272 @@
-# 📚 کلاسور | Classor
+# 📚 Classor
 
-> یک برنامه‌ریز درسی ساده، سریع و فارسی برای دانش‌آموزان
+**Classor** is a lightweight, modern study planner designed for students to organize their school life in one place.
 
-**کلاسور** یک برنامه‌ریز درسی تحت وب است که برای مدیریت برنامه هفتگی کلاس‌ها، تکالیف و فعالیت‌های درسی طراحی شده است.
-این پروژه با تمرکز روی **سادگی، سرعت، رابط کاربری فارسی و استفاده بدون نیاز به سرور** ساخته شده است.
-
----
-
-## ✨ امکانات
-
-### 📅 تقویم شمسی
-
-* تقویم کامل بر پایه تاریخ جلالی
-* نمایش ماه‌های شمسی
-* نمایش روز جاری
-* جابه‌جایی بین ماه‌ها
-* مشاهده فعالیت‌ها و تکالیف هر روز
-* نمایش برنامه کلاسی در کنار تقویم
-
-### 📝 مدیریت تکالیف
-
-* افزودن تکلیف
-* تعیین درس و تاریخ تحویل
-* نوشتن توضیحات تکلیف
-* علامت‌گذاری تکلیف به‌عنوان انجام‌شده
-* ویرایش و حذف تکالیف
-* فیلتر تکالیف:
-
-  * باقی‌مانده
-  * انجام‌شده
-  * همه
-* نمایش تکالیف عقب‌افتاده
-* نمایش تعداد تکالیف نزدیک به موعد
-
-### 📚 برنامه هفتگی
-
-* تعریف روزهای مدرسه
-* ثبت زنگ‌های هر روز
-* افزودن و حذف زنگ‌ها
-* پیشنهاد خودکار درس‌های همان روز هنگام ثبت تکلیف
-
-### ✅ فعالیت‌های درسی
-
-* ثبت فعالیت برای یک روز مشخص
-* تعیین ساعت فعالیت
-* اتصال فعالیت به یک درس
-* علامت‌گذاری فعالیت به‌عنوان انجام‌شده
-* ویرایش و حذف فعالیت
-* امکان ثبت چند فعالیت پشت سر هم
-
-### 💾 پشتیبان‌گیری و بازیابی
-
-اطلاعات برنامه در مرورگر کاربر ذخیره می‌شود و امکان:
-
-* دریافت فایل Backup با فرمت JSON
-* بازیابی اطلاعات از فایل Backup
-* انتقال اطلاعات بین دستگاه‌ها
-* پاک کردن کامل اطلاعات
-
-وجود دارد.
-
-> چون اطلاعات به‌صورت محلی ذخیره می‌شوند، پاک شدن داده‌های مرورگر می‌تواند باعث از بین رفتن اطلاعات شود؛ بنابراین استفاده دوره‌ای از Backup توصیه می‌شود.
+It provides a Persian (RTL) interface with a Jalali calendar, homework management, weekly class scheduling, activities, and local data backup — all inside a single HTML file.
 
 ---
 
-## 🎨 رابط کاربری
+## ✨ Features
 
-کلاسور با هدف ایجاد یک تجربه ساده و کاربردی برای دانش‌آموز طراحی شده است.
+### 📅 Jalali Calendar
 
-ویژگی‌های رابط کاربری:
+* Full Persian/Jalali calendar
+* Month navigation
+* Current date highlighting
+* Leap-year support
+* Gregorian ↔ Jalali date conversion
+* Calendar-based activity and homework management
 
-* 🇮🇷 کاملاً فارسی و RTL
-* 📱 طراحی واکنش‌گرا برای موبایل و دسکتاپ
-* 🌙 پشتیبانی از حالت تاریک سیستم
-* ⌨️ پشتیبانی مناسب از کیبورد و Focus
-* ♿ توجه به دسترسی‌پذیری
-* 🔔 اعلان‌های داخلی برای عملیات مختلف
-* ↩️ امکان بازگردانی بعضی عملیات حذف
+### 📝 Homework Management
+
+* Add homework
+* Edit existing homework
+* Delete homework
+* Mark homework as completed
+* Filter by:
+
+  * All
+  * Pending
+  * Completed
+* Set:
+
+  * Subject
+  * Description
+  * Due date
+
+### 🗓️ Weekly Class Schedule
+
+* Create a weekly school timetable
+* Add and remove class periods
+* Configure active school days
+* Organize subjects throughout the week
+
+### 🎯 Activities
+
+* Add personal or school activities
+* Set date and time
+* Assign a subject
+* Mark activities as completed
+* Edit and delete activities
+
+### 💾 Backup & Restore
+
+* Export your planner data as JSON
+* Import a previous backup
+* Restore your data whenever needed
+* Reset all local data
 
 ---
 
-## 🛠️ تکنولوژی‌ها
+## 🎨 UI & UX
 
-کلاسور بدون فریم‌ورک و بدون Backend ساخته شده است.
+Classor is designed with a clean and student-friendly interface.
 
-### Frontend
+* 🇮🇷 Persian RTL layout
+* 📱 Responsive design
+* 🖥️ Desktop-friendly interface
+* 📲 Mobile bottom navigation
+* 🌙 Automatic dark-mode support
+* ♿ Accessibility-focused interactions
+* 🔔 Toast notifications
+* ↩️ Undo support after deleting items
+* 🎛️ Modal and bottom-sheet interfaces
+* ⌨️ Keyboard-friendly focus states
 
-* HTML5
-* CSS3
-* Vanilla JavaScript
-* SVG Icons
-* LocalStorage
-* `<dialog>` API
-* CSS Responsive Design
+---
 
-### تاریخ شمسی
+## 🛠️ Technologies
 
-برای تبدیل تاریخ میلادی و جلالی، الگوریتم تبدیل Jalaali در خود پروژه پیاده‌سازی شده است.
+Classor intentionally uses a simple, dependency-light architecture:
 
-### ذخیره‌سازی
+* **HTML5**
+* **CSS3**
+* **Vanilla JavaScript**
+* **SVG**
+* **Web Storage / LocalStorage**
+* **HTML `<dialog>`**
+* **Responsive CSS**
+* **Jalali calendar algorithms**
 
-داده‌های برنامه در:
+No frontend framework is required.
+
+There is also no backend server or database.
+
+---
+
+## 🧠 Jalali Calendar
+
+Classor includes its own Jalali calendar implementation in JavaScript.
+
+The application handles:
+
+* Jalali → Gregorian conversion
+* Gregorian → Jalali conversion
+* Jalali leap years
+* Month lengths
+* Calendar calculations
+
+This allows the planner to work naturally with the Persian calendar without relying on a calendar library.
+
+---
+
+## 📦 Project Structure
+
+The project is intentionally kept simple:
 
 ```text
-localStorage
-```
-
-ذخیره می‌شوند.
-
-کلید اصلی ذخیره‌سازی:
-
-```text
-classor.v1
-```
-
-است.
-
----
-
-## 📁 ساختار پروژه
-
-در نسخه فعلی، هسته برنامه در یک فایل HTML قرار دارد:
-
-```text
-classor/
+Classor/
 │
 ├── index.html
 └── README.md
 ```
 
-فایل `index.html` شامل:
-
-```text
-HTML
-├── ساختار رابط کاربری
-│
-├── CSS
-│   ├── Theme
-│   ├── Responsive Design
-│   ├── Calendar
-│   ├── Homework
-│   ├── Weekly Schedule
-│   └── Dialogs
-│
-└── JavaScript
-    ├── Jalaali Calendar
-    ├── State Management
-    ├── LocalStorage
-    ├── Calendar
-    ├── Homework
-    ├── Activities
-    ├── Weekly Schedule
-    ├── Backup / Restore
-    └── UI Events
-```
+The main application contains the HTML, CSS, and JavaScript required to run Classor.
 
 ---
 
-## 🚀 اجرا
+## 🚀 Getting Started
 
-کلاسور به Backend یا نصب پکیج نیاز ندارد.
+### Option 1 — Run Locally
 
-کافی است فایل زیر را در مرورگر باز کنید:
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/classor.git
+```
+
+Open the project directory and launch:
 
 ```text
 index.html
 ```
 
-یا پروژه را روی سرویس‌هایی مانند GitHub Pages قرار دهید.
+No installation or build process is required.
+
+### Option 2 — GitHub Pages
+
+Because Classor is a static web application, it can be deployed directly using **GitHub Pages**.
+
+Simply enable GitHub Pages for the repository and use the branch containing `index.html` as the deployment source.
 
 ---
 
-## 💾 مدل ذخیره‌سازی اطلاعات
+## 💾 Data Storage
 
-کلاسور اطلاعات را به‌صورت محلی در مرورگر ذخیره می‌کند.
+Classor stores planner data locally in the browser.
 
-ساختار کلی داده شامل مواردی مانند:
+This includes information such as:
 
-```json
-{
-  "v": 1,
-  "activeDays": [],
-  "schedule": {},
-  "activities": {},
-  "homework": [],
-  "lastBackup": null
-}
-```
+* Weekly schedule
+* Homework
+* Activities
+* Active school days
+* Backup information
 
-است.
+Because the application uses browser storage, the data remains on the user's device rather than being sent to a remote server.
 
-بنابراین برای استفاده معمولی، نیازی به حساب کاربری یا اتصال اینترنت برای ذخیره اطلاعات وجود ندارد.
+> **Important:** Clearing browser/site data can remove locally stored planner information. Use the built-in backup feature to keep a copy of your data.
 
 ---
 
-## 🔐 حریم خصوصی
+## 🔐 Privacy
 
-کلاسور در حالت فعلی Backend یا حساب کاربری ندارد.
+Classor is designed as a local-first application.
 
-اطلاعات برنامه در **LocalStorage مرورگر کاربر** نگهداری می‌شوند و به سرور ارسال نمی‌شوند.
+There is no account system, backend API, or remote database required to use the planner.
 
-در نتیجه اطلاعاتی مانند:
-
-* برنامه هفتگی
-* تکالیف
-* فعالیت‌های درسی
-
-به‌صورت محلی روی دستگاه ذخیره می‌شوند.
+Your planner data is stored locally in the browser.
 
 ---
 
-## 📱 طراحی واکنش‌گرا
+## 📱 Responsive Design
 
-کلاسور برای نمایش در اندازه‌های مختلف صفحه طراحی شده است.
+Classor adapts to different screen sizes:
 
-در نمایشگرهای کوچک، منوی اصلی به شکل نوار پایین صفحه قرار می‌گیرد و در نمایشگرهای بزرگ، رابط کاربری دسکتاپی ارائه می‌شود.
+* Desktop
+* Laptop
+* Tablet
+* Mobile
+
+On smaller screens, the navigation changes into a mobile-friendly bottom navigation interface.
 
 ---
 
-## 🧩 معماری
+## 🧩 Architecture
 
-کلاسور یک **Single-Page Web App سبک** است.
+Classor follows a simple single-page architecture.
 
-رابط کاربری بر اساس وضعیت داخلی برنامه (`state`) دوباره Render می‌شود.
-
-بخش‌های اصلی برنامه:
+The application is divided conceptually into:
 
 ```text
-Calendar
-   │
-   ├── Daily Activities
-   └── Homework
+UI
+├── Calendar
+├── Homework
+├── Weekly Schedule
+├── Activities
+├── Backup / Restore
+└── Notifications
 
-Homework
-   ├── Pending
-   ├── Completed
-   └── All
+Application Logic
+├── Date & Calendar Logic
+├── Homework State
+├── Schedule State
+├── Activity State
+└── Local Storage
 
-Weekly Schedule
-   └── School Days / Periods
-
-Backup
-   ├── Export JSON
-   └── Import JSON
+Persistence
+└── Browser LocalStorage
 ```
 
----
-
-## 🎯 هدف پروژه
-
-هدف کلاسور این است که مدیریت برنامه درسی برای دانش‌آموز تا حد ممکن:
-
-**ساده، سریع و بدون پیچیدگی**
-
-باشد.
-
-به جای یک سیستم آموزشی سنگین، کلاسور روی نیازهای روزمره دانش‌آموز تمرکز می‌کند:
-
-> امروز چه کلاس‌هایی دارم؟
-> چه تکالیفی دارم؟
-> چه کاری باید انجام بدهم؟
-> چه چیزی را انجام داده‌ام؟
+This keeps the project easy to understand, modify, and deploy.
 
 ---
 
-## 🗺️ مسیر توسعه
+## 🗺️ Roadmap
 
-ایده‌های قابل توسعه برای نسخه‌های آینده می‌توانند شامل موارد زیر باشند:
+Possible future improvements include:
 
-* [ ] PWA و نصب مستقیم روی موبایل
-* [ ] اعلان یادآوری تکالیف
-* [ ] همگام‌سازی بین دستگاه‌ها
-* [ ] حساب کاربری
-* [ ] همگام‌سازی ابری
-* [ ] گزارش پیشرفت درسی
-* [ ] آمار انجام تکالیف
-* [ ] حالت مخصوص معلم و والدین
-* [ ] تقویم امتحانات
-* [ ] یادآوری خودکار کلاس‌ها
-* [ ] پشتیبانی از چند پروفایل دانش‌آموز
+* [ ] Cloud synchronization
+* [ ] User accounts
+* [ ] Multi-device synchronization
+* [ ] Notifications and reminders
+* [ ] More calendar customization
+* [ ] Advanced statistics
+* [ ] PWA installation support
+* [ ] Offline-first improvements
+* [ ] More personalization options
 
 ---
 
-## 🤝 مشارکت
+## 🤝 Contributing
 
-اگر ایده‌ای برای بهتر شدن کلاسور دارید، می‌توانید:
+Contributions, ideas, and improvements are welcome.
 
-1. پروژه را Fork کنید.
-2. تغییرات خود را ایجاد کنید.
-3. یک Pull Request ارسال کنید.
+If you find a bug or have an idea for a new feature:
 
-برای پیشنهاد قابلیت جدید نیز می‌توانید یک Issue ایجاد کنید.
-
----
-
-## 📄 مجوز
-
-در صورت تعیین مجوز رسمی پروژه، این بخش را با مجوز انتخاب‌شده تکمیل کنید.
+1. Open an issue.
+2. Describe the problem or idea.
+3. Provide screenshots or reproduction steps when useful.
+4. Submit a pull request for improvements.
 
 ---
 
-<div align="center">
+## 📄 License
 
-### 📚 کلاسور
+No specific open-source license has been defined for this project yet.
 
-**برنامه‌ریزی بهتر، مدرسه‌ی منظم‌تر.**
+If you plan to publish Classor as an open-source project, consider adding an appropriate license such as MIT.
 
-Made with ❤️ for students
+---
 
-</div>
+## ❤️ About Classor
+
+Classor was created with a simple goal:
+
+> **Make organizing school life easier, clearer, and more enjoyable for students.**
+
+Instead of managing homework, classes, and activities across multiple apps or notebooks, Classor brings them together into one focused student planner.
+
+---
+
+**Made with ❤️ for students.**
